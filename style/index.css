@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "zing-rust-base";
+  src: url("../fonts/zing-rust-base.otf");
+}
+
+.icon {
+	width: 40px;
+	height: 40px;
+}
+
+.header {
+	height: 80px;
+}
+
+.header-text {
+	vertical-align: middle;
+	 height: 30px;
+	font-family: "zing-rust-base";
+	font-size: 37.5px;
+	justify-content: center;
+
+}
+
+.border-bottom  {
+	border-bottom: 1px solid #000000!important;
+
+}
