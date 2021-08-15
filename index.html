@@ -1,15 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link href="//db.onlinewebfonts.com/c/15e3c1a232e2d04d1be2c621734009c1?family=Zing+Rust+Base+Sh2" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="./style/index.css">
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="./style/index.css" />
+    <title>Cricket</title>
 </head>
 
 <body>
@@ -17,21 +18,55 @@
         <header class="p-3 mb-3 border-bottom">
             <div class="container">
                 <div class="d-flex align-items-center header">
-                    <a href="#" >
-                        <img class="icon" src="./imgs/cricket-ball.svg" alt="Kiwi standing on oval"/>
+                    <a href="#">
+                        <img class="icon" src="./imgs/cricket-ball.svg" alt="Kiwi standing on oval" />
                         <!-- <span class="fs-4 header-text">aditya vishwanath</span> -->
                     </a>
                     <p class="header-text ms-2">aditya vishwanath</p>
-                    <!-- <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="#" class="nav-link px-2 link-secondary">Overview</a></li>
-                        <li><a href="#" class="nav-link px-2 link-dark">Inventory</a></li>
-                        <li><a href="#" class="nav-link px-2 link-dark">Customers</a></li>
-                        <li><a href="#" class="nav-link px-2 link-dark">Products</a></li>
-                    </ul> -->
-
                 </div>
             </div>
         </header>
+        <div>
+            <div class="header-text">SELECT SESSION</div>
+            <div class="row align-items-start mt-5 ">
+                <div class="col d-flex flex-column align-items-center">
+                    <p class="session-text">session 1</p>
+                    <div class="calendar">
+                        <a href="session.html" class="align-items-center justify-content-center">
+                            <img class="center" src="./imgs/calendar.svg" alt="Kiwi standing on oval" />
+                            <p class="month-text">26 july</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col d-flex flex-column align-items-center">
+                    <p class="session-text">session 2</p>
+                    <div class="calendar">
+                        <a href="#" class="align-items-center justify-content-center">
+                            <img class="center" src="./imgs/calendar.svg" alt="Kiwi standing on oval" />
+                            <p class="month-text">7 august</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col d-flex flex-column align-items-center">
+                    <p class="session-text">session 3</p>
+                    <div class="calendar">
+                        <a href="#" class="align-items-center justify-content-center">
+                            <img class="center" src="./imgs/calendar.svg" alt="Kiwi standing on oval" />
+                            <p class="month-text">3 august</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col d-flex flex-column align-items-center">
+                    <p class="session-text">session 4</p>
+                    <div class="calendar">
+                        <a href="#" class="align-items-center justify-content-center">
+                            <img class="center" src="./imgs/calendar.svg" alt="Kiwi standing on oval" />
+                            <p class="month-text">9 september</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

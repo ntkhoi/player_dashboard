@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="//db.onlinewebfonts.com/c/15e3c1a232e2d04d1be2c621734009c1?family=Zing+Rust+Base+Sh2" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="p-3 mb-3 border-bottom">
+            <div class="container">
+                <div class="d-flex align-items-center header">
+                    <a href="#">
+                        <img class="icon" src="./imgs/cricket-ball.svg" alt="Kiwi standing on oval" />
+                        <!-- <span class="fs-4 header-text">aditya vishwanath</span> -->
+                    </a>
+                    <p class="header-text ms-2">aditya vishwanath</p>
+                </div>
+            </div>
+        </header>
+        <div>
+            <div class="session-header">SESSION 1</div>
+            <div class="session-header">7 August</div>
+            <div class="row">
+                <div class="col">
+                    <video class="mt-2" controls>
+                        <source src="http://172.104.172.200:8080/api/videos/1" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col">
+                    <table class="table mt-3">
+                        <thead>
+                            <tr>
+                                <th class="table-green" scope="col">
+                                    Delivery
+                                </th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Arm Flex</th>
+                                <th scope="col">FFC</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>0:46</td>
+                                <td>12</td>
+                                <td>2cm</td>
+                            </tr>
+                            <tr class="table-danger">
+                                <th scope="row">2</th>
+                                <td>1:04</td>
+                                <td>10</td>
+                                <td>-2cm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>1:36</td>
+                                <td>11</td>
+                                <td>1cm</td>
+                            </tr>
+                            <tr class="table-danger">
+                                <th scope="row">4</th>
+                                <td>2:01</td>
+                                <td>16</td>
+                                <td>-4cm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>2:33</td>
+                                <td>14</td>
+                                <td>34cm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>5:05</td>
+                                <td>12</td>
+                                <td>5cm</td>
+                            </tr>
+                            <tr class="table-danger">
+                                <th scope="row">7</th>
+                                <td>6:00</td>
+                                <td>15</td>
+                                <td>-3cm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <p class="session-header">BATTING</p>
+                <div class="row">
+                    <div class="col">
+                        <canvas id="donutChart" style="
+                                    width: 100%;
+                                    max-width: 500px;
+                                    max-height: 250px;
+                                "></canvas>
+                    </div>
+                    <div class="col">
+                        <canvas class="align-bottom" id="barChart" style="
+                                    width: 100%;
+                                    max-width: 500px;
+                                    max-height: 250px;
+                                "></canvas>
+                    </div>
+                    <div class="col">
+                        <canvas id="horizontalBarChart" style="
+                                    width: 100%;
+                                    max-width: 500px;
+                                    max-height: 250px;
+                                "></canvas>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <p>Dot Map</p>
+                    <canvas id="bubbleChar" style="width: 100%; max-height: 250px;"></canvas>
+                </div>
+            </div>
+            <div>
+                <p class="session-header mt-5">BOWLING</p>
+                <div class="row">
+                    <div class="row">
+                        <div class="col">
+                            <canvas id="bow_donutChart" style="
+                                        width: 100%;
+                                        max-width: 500px;
+                                        max-height: 250px;
+                                    "></canvas>
+                        </div>
+                        <div class="col">
+                            <canvas class="align-bottom" id="bow_barChart" style="
+                                        width: 100%;
+                                        max-width: 500px;
+                                        max-height: 250px;
+                                    "></canvas>
+                        </div>
+                        <div class="col">
+                            <canvas id="bow_horizontalBarChart" style="
+                                        width: 100%;
+                                        max-width: 500px;
+                                        max-height: 250px;
+                                    "></canvas>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <p>Dot Map</p>
+                        <canvas id="bow_bubbleChar" style="width: 100%; max-height: 250px;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/session.js"></script>
+</body>
+
+</html>

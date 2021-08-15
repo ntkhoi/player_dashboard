@@ -7,21 +7,85 @@
 	width: 40px;
 	height: 40px;
 }
+.calendar {
+	height: 100px;
+	width: 50%;
+	align-self: center;
+}
+
+.calendar:hover {
+  	background-color: #f0f0f5;
+}
+
+.center {
+ height: 100px;
+ 	width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.widget-container {
+	height: 150px;
+}
+
+.session-header {
+	font-size: 20px;
+	font-family: "zing-rust-base";
+}
+
+.table-green {
+	background-color: "#79d279";
+}
+
+
+video {
+	width: 100%;
+	background-color: #f0f0f5;
+}
 
 .header {
 	height: 80px;
 }
+.calendar-content {
+
+}
+
 
 .header-text {
 	vertical-align: middle;
-	 height: 30px;
+	height: 30px;
 	font-family: "zing-rust-base";
 	font-size: 37.5px;
 	justify-content: center;
+
+
+}
+.select-session {
+	font-family: "zing-rust-base";
+	font-size: 23px;
+}
+
+.session-text {
+	font-family: "zing-rust-base";
+	font-size: 14.2px;
+	text-align: center;
+}
+
+.month-text {
+	font-family: "zing-rust-base";
+	font-size: 18px;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+
 
 }
 
 .border-bottom  {
 	border-bottom: 1px solid #000000!important;
 
+}
+
+#bubbleChar {
+	background-color: #c2d1f0;
 }
